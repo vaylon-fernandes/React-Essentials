@@ -40,7 +40,7 @@ const findWinner = () => {
     console.log("X wins");
   } else if (oWon) {
     console.log("O wins");
-  } else if (boardFull) {
+  } else if (!xWon && !oWon && boardFull) {
     console.log("Game draw");
   }
 };
